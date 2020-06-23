@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,31 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Help</title>
 </head>
+
 <body>
     <div class="main-content">
         {{>header}}
-        <p>Some useful text</p>
+        <div>
+            <h2 style="text-align: center;">Enquiries Form</h2>
+            <hr>
+        </div>
+        <div class="container">
+            <form>
+
+                <input type="text" id="fname" name="firstname" placeholder=" Enter Your name.." required>
+
+                <input type="text" id="email" name="lastname" placeholder="Enter Your email.." required>
+
+                <textarea id="subject" name="subject" placeholder="Write your query..." style="height:200px"
+                    required></textarea>
+
+                <input type="submit" id="sub" value="Submit">
+
+            </form>
+        </div>
     </div>
     {{>footer}}
     {{!-- <script src="./js/index.js"></script> --}}
 </body>
+
 </html>
