@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather1.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <h3>Check Current Weather...</h3>
+        <form>
+            <input type="text" placeholder="Search for city or place...">
+            <button>Search</button>
+        </form>
+        
+        <h3 style="color:green" id="message-1"></h3>
+        <h4 style="color:green" id="message-2"></h4>
+        <p id="message-3"></p>
+        <p id="message-4"></p>
+        <p id="message-5"></p>
+        <p id="message-6"></p>
+        <p id="message-7"></p>
+        <p id="message-8"></p>
+    </div>
+
+    {{>footer}}
+    {{!-- <img src="/img/home.jpg"> --}}
+    <script src="./js/index.js"></script>
+
+    
+    
+</body>
+</html>
